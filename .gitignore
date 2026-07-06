@@ -1,0 +1,7 @@
+node_modules/
+dist/
+release/
+test/.fixtures/
+*.log
+.DS_Store
+Thumbs.db
