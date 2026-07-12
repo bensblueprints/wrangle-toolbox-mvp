@@ -33,7 +33,7 @@ Everywhere: drag-drop files into any input, copy button on every output, per-too
 
 Don't want to touch npm? Grab the packaged Windows installer (plus updates and support the project):
 
-**→ [Get Wrangle on Whop](https://whop.com/onetime-suite)** — one-time purchase, yours forever.
+**→ [Get Wrangle on Whop](https://whop.com/benjisaiempire/wrangle-app)** — one-time purchase, yours forever.
 
 ## Quick start (from source)
 
