@@ -2,7 +2,11 @@
 
 ## Demo
 
-VIDEO-PLACEHOLDER
+
+
+https://github.com/user-attachments/assets/587b47ad-72f5-4819-ae91-4406440b820b
+
+
 
 **The offline developer data toolbox. Stop pasting API keys into random websites.**
 
