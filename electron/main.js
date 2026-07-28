@@ -5,7 +5,6 @@ import { app, BrowserWindow, ipcMain, dialog, clipboard, shell } from 'electron'
 import path from 'node:path';
 import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { createRequire } from 'node:module';
 
 import * as convert from '../src/lib/convert.js';
 import * as validate from '../src/lib/validate.js';
@@ -19,8 +18,6 @@ import * as regex from '../src/lib/regex.js';
 import * as timestamp from '../src/lib/timestamp.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const require = createRequire(import.meta.url);
-const { gateLicense, registerLicenseIpc } = require('./license-gate.cjs');
 
 const registry = { convert, validate, query, differ, jwt, base64, hash, uuid, regex, timestamp };
 
@@ -145,9 +142,7 @@ function createWindow() {
   return win;
 }
 
-app.whenReady().then(async () => {
-  if (!(await gateLicense())) return; // quit already requested
-  registerLicenseIpc();
+app.whenReady().then(() => {
   createWindow();
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow();

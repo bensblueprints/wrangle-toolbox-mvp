@@ -1,7 +1,7 @@
 {
   "name": "wrangle",
   "productName": "Wrangle",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "description": "The offline developer data toolbox — convert, validate, format, query and diff JSON/CSV/YAML/XML, decode JWTs, encode, hash, generate UUIDs, test regex, convert timestamps. Pay once, own it forever.",
   "author": "Ben (bensblueprints)",
   "license": "MIT",
